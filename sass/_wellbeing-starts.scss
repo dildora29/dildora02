@@ -1,0 +1,125 @@
+#wellbeing-starts {
+  background-image: url(../images/rasm-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  margin: 37px auto 750px;
+  position: relative;
+  padding: 33px 0 120px;
+
+  .wellbeing-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+
+    img {
+      padding: 38px 0 13px;
+    }
+
+    h2 {
+      font-size: 21.33px;
+      font-weight: 600;
+      line-height: 31px;
+      color: #fff;
+      text-align: center;
+    }
+    p {
+      display: none;
+    }
+    button {
+      display: flex;
+      width: 198px;
+      height: 46px;
+      padding: 16px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 67px;
+      border: 1px solid var(--color-gray-gray-10, #f4f4f4);
+      background: none;
+
+      font-size: 16.33px;
+      font-weight: 600;
+      line-height: 24px;
+      color: #fff;
+    }
+  }
+
+  .wellbeing-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    background: #fce2d7;
+    padding: 71px 0;
+    gap: 49px;
+    width: 90%;
+
+    position: absolute;
+    top: 285px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+
+      p {
+        display: flex;
+        text-align: center;
+        font-size: 21.33px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 840px) {
+  #wellbeing-starts {
+    margin-bottom: 420px;
+    .wellbeing-text {
+      h2 {
+        font-size: 37.9px;
+      }
+
+      p {
+        display: block;
+        color: #fff;
+        text-align: center;
+        max-width: 600px;
+        padding: 12px 0 28px;
+      }
+    }
+
+    .wellbeing-icons {
+      display: flex;
+      padding: 71px 66px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+
+      top: 400px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #wellbeing-starts {
+    .wellbeing-icons {
+      padding: 119px 66px;
+      margin: -100px 0;
+
+      .wellbeing-icon {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+      }
+    }
+  }
+}

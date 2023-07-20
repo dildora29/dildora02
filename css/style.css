@@ -1,0 +1,547 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+#food {
+  border-radius: 12px;
+  background: var(--text-text-invert, #f4f4f4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 0 54px;
+}
+#food .food-img {
+  display: none;
+}
+#food .food-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#food .food-text h2 {
+  font-size: 39.7px;
+  font-weight: 600;
+  line-height: 47px;
+  text-align: center;
+}
+#food .food-text .food-card div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 41px 0;
+}
+
+@media screen and (min-width: 840px) {
+  #food .food-text h2 {
+    font-size: 50.52px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  #food .food-text .food-card {
+    max-width: 543px;
+    display: flex;
+    padding: 41px 0;
+    gap: 69px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #food {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 56px 110px;
+    gap: 87px;
+  }
+  #food .food-img {
+    display: block;
+  }
+  #food .food-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  #food .food-text h2 {
+    display: flex;
+    align-items: start;
+  }
+  #food .food-text .food-card div {
+    display: flex;
+    align-items: start;
+    text-align: start;
+    padding: 0;
+  }
+}
+footer {
+  background: #285e67;
+  padding: 78px 0;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+footer nav .logo {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+footer nav .logo a {
+  color: #fff;
+}
+footer nav .navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+footer nav .navbar div {
+  display: flex;
+  gap: 40px;
+}
+footer nav .navbar div li a {
+  color: #fff;
+}
+footer .icons {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 36px 0;
+  gap: 24px;
+}
+
+@media screen and (min-width: 840px) {
+  footer {
+    padding: 78px 70px;
+  }
+  footer .footer {
+    align-items: start;
+  }
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  footer nav .logo {
+    align-items: start;
+  }
+  footer nav .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1280px) {
+  footer {
+    padding: 78px 139px;
+  }
+  footer nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer nav .logo {
+    align-items: center;
+  }
+  footer .icons {
+    padding: 0;
+  }
+}
+#header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0 64px;
+}
+#header nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#header nav .logo a {
+  color: #285e67;
+  text-align: center;
+  font-size: 21.33px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+#header nav .navbar {
+  display: none;
+}
+#header #hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#header #hero-section h1 {
+  text-align: center;
+  font-size: 37.9px;
+  font-weight: 600;
+  line-height: 47px;
+}
+#header #hero-section p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin: 17px auto 33px;
+}
+#header #hero-section button {
+  display: flex;
+  width: 211px;
+  height: 56px;
+  padding: 16px;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
+  border-radius: 67px;
+  background: var(--color-brand-green, #285e67);
+  border: none;
+  font-size: 21.33px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fff;
+}
+#header #hero-section .imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 56px 0 36px;
+}
+
+@media screen and (min-width: 840px) {
+  #header nav .navbar {
+    display: flex;
+    color: #2b2b2b;
+    gap: 40px;
+  }
+  #header nav i {
+    display: none;
+  }
+  #header #hero-section h1 {
+    text-align: center;
+    font-size: 66px;
+    font-weight: 600;
+    line-height: 82px;
+  }
+  #header #hero-section p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+  }
+  #header #hero-section .imgs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+#organic-produce {
+  padding: 36px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#organic-produce #boxss1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#organic-produce #boxss1 img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 360px;
+  max-height: 455px;
+}
+#organic-produce #boxss2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+#organic-produce #boxss2 h2 {
+  text-align: center;
+  font-size: 39.7px;
+  font-weight: 600;
+  line-height: 49px;
+  padding: 25px 0 16px;
+}
+#organic-produce #boxss2 p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#organic-produce #boxss2 .icon-lorem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 23px;
+}
+#organic-produce #boxss2 .icon-lorem p {
+  color: var(--color-brand-green, #285e67);
+}
+
+@media screen and (min-width: 840px) {
+  #organic-produce .organic-produce-content {
+    display: flex;
+    align-items: stretch;
+    gap: 25px;
+    padding: 80px 0;
+    flex: 1;
+  }
+  #organic-produce .organic-produce-content #boxss1 img {
+    height: 100%;
+    max-height: 100%;
+  }
+  #organic-produce .organic-produce-content #boxss2 {
+    align-items: start;
+  }
+  #organic-produce .organic-produce-content #boxss2 h2 {
+    font-size: 50.52px;
+    font-weight: 600;
+    line-height: 62px;
+    text-align: start;
+  }
+  #organic-produce .organic-produce-content #boxss2 p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: start;
+  }
+}
+#wellbeing-starts {
+  background-image: url(../images/rasm-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  margin: 37px auto 750px;
+  position: relative;
+  padding: 33px 0 120px;
+}
+#wellbeing-starts .wellbeing-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+}
+#wellbeing-starts .wellbeing-text img {
+  padding: 38px 0 13px;
+}
+#wellbeing-starts .wellbeing-text h2 {
+  font-size: 21.33px;
+  font-weight: 600;
+  line-height: 31px;
+  color: #fff;
+  text-align: center;
+}
+#wellbeing-starts .wellbeing-text p {
+  display: none;
+}
+#wellbeing-starts .wellbeing-text button {
+  display: flex;
+  width: 198px;
+  height: 46px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 67px;
+  border: 1px solid var(--color-gray-gray-10, #f4f4f4);
+  background: none;
+  font-size: 16.33px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fff;
+}
+#wellbeing-starts .wellbeing-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  background: #fce2d7;
+  padding: 71px 0;
+  gap: 49px;
+  width: 90%;
+  position: absolute;
+  top: 285px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#wellbeing-starts .wellbeing-icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+#wellbeing-starts .wellbeing-icons div p {
+  display: flex;
+  text-align: center;
+  font-size: 21.33px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 840px) {
+  #wellbeing-starts {
+    margin-bottom: 420px;
+  }
+  #wellbeing-starts .wellbeing-text h2 {
+    font-size: 37.9px;
+  }
+  #wellbeing-starts .wellbeing-text p {
+    display: block;
+    color: #fff;
+    text-align: center;
+    max-width: 600px;
+    padding: 12px 0 28px;
+  }
+  #wellbeing-starts .wellbeing-icons {
+    display: flex;
+    padding: 71px 66px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    top: 400px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #wellbeing-starts .wellbeing-icons {
+    padding: 119px 66px;
+    margin: -100px 0;
+  }
+  #wellbeing-starts .wellbeing-icons .wellbeing-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+}
+#wellbeing {
+  display: flex;
+  padding: 64px 0 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #f4f4f4;
+}
+#wellbeing .box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#wellbeing .box1 h2 {
+  text-align: center;
+  font-size: 39.7px;
+  font-weight: 600;
+  line-height: 53px;
+}
+#wellbeing .box1 #wellbeing-box div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 26px;
+}
+#wellbeing .box1 #wellbeing-box div img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#wellbeing .box1 #wellbeing-box div p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 255px;
+  font-size: 16px;
+  padding-top: 20px;
+  line-height: 24px;
+}
+#wellbeing .box2 {
+  display: none;
+}
+
+@media screen and (min-width: 840px) {
+  container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  #wellbieng .box1 h2 {
+    font-size: 50.52px;
+    font-weight: 600;
+    line-height: 62px;
+  }
+  #wellbeing-box {
+    padding-top: 65px;
+    display: flex;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #wellbeing {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  #wellbeing .box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  #wellbeing .box1 #wellbeing-box {
+    padding-top: 20px;
+  }
+  #wellbeing .box1 #wellbeing-box div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  #wellbeing .box1 #wellbeing-box div p {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+  }
+  #wellbeing .box2 {
+    display: block;
+    padding: 100px 0px 0px 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

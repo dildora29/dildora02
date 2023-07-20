@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  max-width: 84%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header .container nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0 64px;
+}
+#header .container nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#header .container nav .logo a {
+  color: #285e67;
+  text-align: center;
+  font-size: 21.33px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+#header .container nav .navbar li a {
+  display: none;
+}
+#header .container #hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#header .container #hero-section h1 {
+  text-align: center;
+  font-size: 37.9px;
+  font-weight: 600;
+  line-height: 47px;
+}
+#header .container #hero-section p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin: 17px auto 33px;
+}
+#header .container #hero-section button {
+  display: flex;
+  width: 211px;
+  height: 56px;
+  padding: 16px;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
+  border-radius: 67px;
+  background: var(--color-brand-green, #285e67);
+  border: none;
+  font-size: 21.33px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fff;
+}
+#header .container #hero-section .imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 56px 0 36px;
+}
+#header .container #hero-section .imgs img {
+  width: 356px;
+  height: 390px;
+}
+
+#wellbeing {
+  display: flex;
+  padding: 64px 0 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--text-text-invert, #f4f4f4);
+}
+#wellbeing .box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#wellbeing .box1 h2 {
+  text-align: center;
+  font-size: 39.7px;
+  font-weight: 600;
+  line-height: 53px;
+}
+#wellbeing .box1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 26px;
+}
+#wellbeing .box1 div img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#wellbeing .box1 div p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 255px;
+  font-size: 16px;
+  padding-top: 20px;
+}
+#wellbeing .box2 {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
